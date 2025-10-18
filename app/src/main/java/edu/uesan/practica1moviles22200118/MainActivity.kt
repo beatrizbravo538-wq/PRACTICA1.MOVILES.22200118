@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
         // Allows the app to use the full screen for a more modern look.
         enableEdgeToEdge()
         setContent {
+
             // Applies your app's visual theme (colors, fonts, etc.).
             PRACTICA1MOVILES22200118Theme {
                 // Starts the navigation system, which will display the main screen.

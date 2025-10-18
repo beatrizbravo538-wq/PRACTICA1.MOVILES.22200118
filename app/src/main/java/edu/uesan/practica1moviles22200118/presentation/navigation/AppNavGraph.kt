@@ -14,6 +14,7 @@ import edu.uesan.practica1moviles22200118.presentation.home.HomeScreen
 fun AppNavGraph() {
     val navController = rememberNavController()
 
+
     // NavHost es el contenedor que muestra la pantalla actual según la ruta.
     NavHost(
         navController = navController,

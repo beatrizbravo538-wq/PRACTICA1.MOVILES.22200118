@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import java.text.DecimalFormat
 
 @OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun ActivityLogScreen(navController: NavController) {
     // --- Estados para guardar los datos del usuario ---

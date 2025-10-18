@@ -20,6 +20,7 @@ fun HomeScreen(navController: NavController) {
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
+
     ) {
         // Button for the Water Consumption Calculator
         Button(onClick = { navController.navigate("water_calculator") }) {

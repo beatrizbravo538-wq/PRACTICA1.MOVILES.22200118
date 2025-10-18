@@ -5,4 +5,5 @@ data class Car(
     val model: String,      // Modelo
     val price: Double,      // Precio aproximado
     val imageUrl: String    // Imagen del auto
+
 )
