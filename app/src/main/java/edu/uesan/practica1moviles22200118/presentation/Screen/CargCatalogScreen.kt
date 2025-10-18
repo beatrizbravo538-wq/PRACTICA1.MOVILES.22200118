@@ -21,7 +21,7 @@ import java.text.DecimalFormat
 //    Utiliza el data class "Car" que creaste.
 val sampleCars = listOf(
         Car("Ferrari", "SF90 Stradale", 507000.00, "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"),
-        Car("Lamborghini", "Huracan EVO", 261274.00, "https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?cs=srgb&dl=pexels-broderick-armbrister-1186919-6462662.jpg&fm=jpg"),
+        Car("Lamborghini", "Huracan EVO", 261274.00, "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/0_facelift_2025/homepage/models/revuelto/familyChooser-Revuelto_0.png"),
         Car("Porsche", "911 GT3 RS", 241300.00, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPqrztKXrM4D9OOI2VywDoUGOd-VBDTx38g&s"),
         Car("McLaren", "720S", 310500.00, "https://hips.hearstapps.com/hmg-prod/images/mclaren-750s-coupe-1-6447ba5ef1f0d.jpg?crop=0.8896296296296295xw:1xh;center,top&resize=1200:*"),
         Car("Bugatti", "Chiron", 3300000.00, "https://www.shutterstock.com/image-photo/szczecinpolandjuly-2024bugatti-tourbillon-v16-1800-600nw-2492193479.jpg")
