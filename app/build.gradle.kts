@@ -56,4 +56,9 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Navigation Compose: Allows you to navigate between your screens
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+    // Coil Compose: Used to load the product images from a URL
+    implementation("io.coil-kt:coil-compose:2.5.0")
 }
