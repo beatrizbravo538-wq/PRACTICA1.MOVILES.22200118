@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             PRACTICA1MOVILES22200118Theme {
+                // Navegación entre pantallas
                 AppNavGraph()
             }
         }
