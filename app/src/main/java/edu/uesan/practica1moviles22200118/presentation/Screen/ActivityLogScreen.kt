@@ -13,7 +13,6 @@ import androidx.navigation.NavController
 import java.text.DecimalFormat
 
 @OptIn(ExperimentalMaterial3Api::class)
-
 @Composable
 fun ActivityLogScreen(navController: NavController) {
     // --- Estados para guardar los datos del usuario ---
@@ -78,7 +77,7 @@ fun ActivityLogScreen(navController: NavController) {
         )
         Spacer(modifier = Modifier.height(16.dp))
 
-        // RadioButtons para la intensidad
+        // --- CAMBIO: De Dropdown a RadioButtons para la Intensidad ---
         Column {
             Text("Intensidad", style = MaterialTheme.typography.bodyLarge)
             intensityOptions.forEach { intensity ->
@@ -88,12 +87,13 @@ fun ActivityLogScreen(navController: NavController) {
                         .selectable(
                             selected = (intensity == selectedIntensity),
                             onClick = { selectedIntensity = intensity }
-                        ),
+                        )
+                        .padding(vertical = 4.dp), // Ajuste de padding
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     RadioButton(
                         selected = (intensity == selectedIntensity),
-                        onClick = null
+                        onClick = null // El clic se maneja en la Row para mejor UX
                     )
                     Spacer(modifier = Modifier.width(8.dp))
                     Text(text = intensity)
@@ -110,7 +110,6 @@ fun ActivityLogScreen(navController: NavController) {
                 duration.isBlank() -> errorMessage = "Todos los campos son obligatorios."
                 durationInt == null || durationInt <= 0 -> errorMessage = "La duración debe ser un número entero positivo."
                 else -> {
-                    // Si todo es válido, se procede con el cálculo
                     errorMessage = ""
                     val caloriesPerMinute = when (selectedActivity) {
                         "Correr" -> 10
@@ -125,7 +124,6 @@ fun ActivityLogScreen(navController: NavController) {
                         else -> 1.2 // Alta
                     }
 
-                    // Fórmula: calorías quemadas = calorías por minuto * duración * factor por intensidad
                     val caloriesBurned = caloriesPerMinute * durationInt * intensityFactor
                     val df = DecimalFormat("#.#")
                     resultMessage = "Calorías quemadas: ${df.format(caloriesBurned)} kcal"
