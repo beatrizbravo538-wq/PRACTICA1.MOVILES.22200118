@@ -20,11 +20,11 @@ import java.text.DecimalFormat
 // 1. Lista de ejemplo de autos deportivos (Mock Data).
 //    Utiliza el data class "Car" que creaste.
 val sampleCars = listOf(
-        Car("Ferrari", "SF90 Stradale", 507000.00, "https://www.topgear.com/sites/default/files/2022/07/1-Ferrari-SF90-Stradale.jpg"),
-        Car("Lamborghini", "Huracan EVO", 261274.00, "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/2023/revuelto/revuelto_m.jpg"),
-        Car("Porsche", "911 GT3 RS", 241300.00, "https://files.porsche.com/filestore/image/multimedia/none/992-gt3-rs-modelimage-sideshot/model/cfbb8ed3-1a15-11ed-80f5-005056bbdc38/porsche-model.png"),
-        Car("McLaren", "720S", 310500.00, "https://hips.hearstapps.com/hmg-prod/images/2023-mclaren-720s-101-64495b44458d7.jpg?crop=0.781xw:0.878xh;0.101xw,0.122xh&resize=768:*"),
-        Car("Bugatti", "Chiron", 3300000.00, "https://hips.hearstapps.com/hmg-prod/images/bugatti-chiron-pur-sport-102-1598997235.jpg?crop=0.889xw:1.00xh;0.0529xw,0&resize=640:*")
+        Car("Ferrari", "SF90 Stradale", 507000.00, "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"),
+        Car("Lamborghini", "Huracan EVO", 261274.00, "https://images.pexels.com/photos/6462662/pexels-photo-6462662.png?cs=srgb&dl=pexels-broderick-armbrister-1186919-6462662.jpg&fm=jpg"),
+        Car("Porsche", "911 GT3 RS", 241300.00, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPqrztKXrM4D9OOI2VywDoUGOd-VBDTx38g&s"),
+        Car("McLaren", "720S", 310500.00, "https://hips.hearstapps.com/hmg-prod/images/mclaren-750s-coupe-1-6447ba5ef1f0d.jpg?crop=0.8896296296296295xw:1xh;center,top&resize=1200:*"),
+        Car("Bugatti", "Chiron", 3300000.00, "https://www.shutterstock.com/image-photo/szczecinpolandjuly-2024bugatti-tourbillon-v16-1800-600nw-2492193479.jpg")
     )
 
 @OptIn(ExperimentalMaterial3Api::class)
